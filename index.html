@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🥤 Vending Machine</h1>
+        
+        <div class="balance-section">
+            <h2>Balance: $<span id="balance">0.00</span></h2>
+            <div class="money-buttons">
+                <button onclick="insertMoney(0.25)">$0.25</button>
+                <button onclick="insertMoney(0.50)">$0.50</button>
+                <button onclick="insertMoney(1.00)">$1.00</button>
+                <button onclick="insertMoney(5.00)">$5.00</button>
+                <button class="return-btn" onclick="returnMoney()">Return Money</button>
+            </div>
+        </div>
+
+        <div class="products-section">
+            <h2>Select a Product</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div class="message-section">
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
